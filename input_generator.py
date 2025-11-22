@@ -11,11 +11,11 @@ def parse_input_file(file_path):
 
     i = 0
 
-    # 1. First base string
+    # First base string
     s0 = lines[i]
     i += 1
 
-    # 2. Read indices for first string
+    # Read indices for first string
     s_indices = []
     while i < len(lines) and lines[i].isdigit():
         s_indices.append(int(lines[i]))
@@ -23,14 +23,14 @@ def parse_input_file(file_path):
 
     X = generate_string(s0, s_indices)
 
-    # 3. Second base string
+    # Second base string
     if i >= len(lines):
-        return X, None   # 防止出错（如果没有第二部分）
+        return X, None   
 
     t0 = lines[i]
     i += 1
 
-    # 4. Read indices for second string
+    # Read indices for second string
     t_indices = []
     while i < len(lines) and lines[i].isdigit():
         t_indices.append(int(lines[i]))
@@ -41,7 +41,6 @@ def parse_input_file(file_path):
     return X, Y
 
 
-# 主程序入口
 if __name__ == "__main__":
     import sys
 
@@ -61,3 +60,4 @@ if __name__ == "__main__":
         print("Length Y:", len(Y))
     else:
         print("\nWarning: Second string not found.")
+
