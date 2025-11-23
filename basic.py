@@ -175,7 +175,7 @@ def main(input_filepath, output_filepath):
         # Generate Input Strings (S and T)
         string_S, string_T = parse_input_file(input_filepath)
         
-        # Run Basic DP Algorithm and measure time/memory
+        # Run Basic DP Algorithm 
         cost, aligned_S, aligned_T = basic_sequence_alignment(string_S, string_T)
         
         end_time = time.time() * 1000
