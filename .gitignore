@@ -1,3 +1,7 @@
 SampleTestCases
 Results
 check_output.py
+
+run_all_and_extract.sh
+basic_results.csv
+extract_data.py

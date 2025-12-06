@@ -192,7 +192,8 @@ def main(input_filepath, output_filepath):
         mem_after = process_memory()
 
         # Calculate memory used by algorithm
-        memory_consumed_kb = mem_after - mem_before
+        # memory_consumed_kb = mem_after - mem_before
+        memory_consumed_kb = mem_after  # Total memory used at end
 
     except Exception as e:
         print(f"An unexpected error occurred: {e}", file=sys.stderr)
